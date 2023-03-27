@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+.header .toggleMenu span{
+    cursor: pointer;
+    height: 0.2rem;
+    width: 2rem;
+    @apply bg-darkgray block mb-1 ml-auto
+}
+.header .toggleMenu span:nth-child(2){
+    width: 1.5rem;
+}
+.header .toggleMenu span:nth-child(3){
+    width: 0.8rem;
+}
+.headerMobileNav{
+    max-height: 0;
+    overflow: hidden;
+}
+.headerMobileNav.active{
+    overflow: visible;
+}
+table tr td{
+    @apply pb-5 text-left font-semibold 
+}
