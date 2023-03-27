@@ -22,6 +22,7 @@
 }
 .headerMobileNav.active{
     overflow: visible;
+    max-height: 500px;
 }
 table tr td{
     @apply pb-5 text-left font-semibold 

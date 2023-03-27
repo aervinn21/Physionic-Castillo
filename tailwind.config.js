@@ -19,8 +19,8 @@ module.exports = {
 
       fontSize:{
         vhuge: 'clamp(2.5rem, 6vw, 4rem)',
-        huge: 'clamp(2rem, 6vw, 3rem)',
-        semihuge: 'clamp(1rem, 6vw, 2.5rem)'
+        huge: 'clamp(2rem, 5vw, 3rem)',
+        semihuge: 'clamp(1rem, 6vw, 2rem)'
       },
       backgroundImage:{
         'pic': "url('/dist/img/1.webp')",

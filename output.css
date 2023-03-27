@@ -606,8 +606,16 @@ video {
   margin-bottom: 0.75rem !important;
 }
 
+.mb-4 {
+  margin-bottom: 1rem !important;
+}
+
 .mb-5 {
   margin-bottom: 1.25rem !important;
+}
+
+.ml-4 {
+  margin-left: 1rem !important;
 }
 
 .ml-\[-1rem\] {
@@ -624,14 +632,6 @@ video {
 
 .mt-4 {
   margin-top: 1rem !important;
-}
-
-.mb-4 {
-  margin-bottom: 1rem !important;
-}
-
-.ml-4 {
-  margin-left: 1rem !important;
 }
 
 .block {
@@ -654,6 +654,10 @@ video {
   display: none !important;
 }
 
+.w-\[45\%\] {
+  width: 45% !important;
+}
+
 .w-\[50\%\] {
   width: 50% !important;
 }
@@ -664,18 +668,6 @@ video {
 
 .w-full {
   width: 100% !important;
-}
-
-.w-\[60\%\] {
-  width: 60% !important;
-}
-
-.w-\[40\%\] {
-  width: 40% !important;
-}
-
-.w-\[45\%\] {
-  width: 45% !important;
 }
 
 .cursor-pointer {
@@ -712,14 +704,6 @@ video {
 
 .gap-6 {
   gap: 1.5rem !important;
-}
-
-.gap-14 {
-  gap: 3.5rem !important;
-}
-
-.gap-24 {
-  gap: 6rem !important;
 }
 
 .rounded-full {
@@ -763,8 +747,8 @@ video {
   border-color: rgb(255 255 255 / var(--tw-border-opacity)) !important;
 }
 
-.bg-\[\#00000096\] {
-  background-color: #00000096 !important;
+.bg-\[\#0000006f\] {
+  background-color: #0000006f !important;
 }
 
 .bg-\[\#d9edff\] {
@@ -787,6 +771,11 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity)) !important;
 }
 
+.bg-lightgray {
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(250 250 250 / var(--tw-bg-opacity)) !important;
+}
+
 .bg-primary {
   --tw-bg-opacity: 1 !important;
   background-color: rgb(35 166 240 / var(--tw-bg-opacity)) !important;
@@ -797,11 +786,6 @@ video {
   background-color: rgb(37 43 66 / var(--tw-bg-opacity)) !important;
 }
 
-.bg-slate-500 {
-  --tw-bg-opacity: 1 !important;
-  background-color: rgb(100 116 139 / var(--tw-bg-opacity)) !important;
-}
-
 .bg-transparent {
   background-color: transparent !important;
 }
@@ -809,15 +793,6 @@ video {
 .bg-white {
   --tw-bg-opacity: 1 !important;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity)) !important;
-}
-
-.bg-lightgray {
-  --tw-bg-opacity: 1 !important;
-  background-color: rgb(250 250 250 / var(--tw-bg-opacity)) !important;
-}
-
-.bg-\[\#0000006f\] {
-  background-color: #0000006f !important;
 }
 
 .bg-\[url\(\'\.\/img\/hero-cover\.jpg\'\)\] {
@@ -899,16 +874,6 @@ video {
   padding-bottom: 2rem !important;
 }
 
-.px-20 {
-  padding-left: 5rem !important;
-  padding-right: 5rem !important;
-}
-
-.px-14 {
-  padding-left: 3.5rem !important;
-  padding-right: 3.5rem !important;
-}
-
 .text-left {
   text-align: left !important;
 }
@@ -935,7 +900,7 @@ video {
 }
 
 .text-huge {
-  font-size: clamp(2rem, 6vw, 3rem) !important;
+  font-size: clamp(2rem, 5vw, 3rem) !important;
 }
 
 .text-lg {
@@ -944,7 +909,7 @@ video {
 }
 
 .text-semihuge {
-  font-size: clamp(1rem, 6vw, 2.5rem) !important;
+  font-size: clamp(1rem, 6vw, 2rem) !important;
 }
 
 .font-bold {
@@ -1025,6 +990,7 @@ video {
 
 .headerMobileNav.active{
   overflow: visible;
+  max-height: 500px;
 }
 
 table tr td {
@@ -1059,8 +1025,8 @@ table tr td {
     display: none !important;
   }
 
-  .md\:w-\[30\%\] {
-    width: 30% !important;
+  .md\:w-\[40\%\] {
+    width: 40% !important;
   }
 
   .md\:w-\[80\%\] {
@@ -1071,8 +1037,16 @@ table tr td {
     width: 100% !important;
   }
 
+  .md\:w-\[50\%\] {
+    width: 50% !important;
+  }
+
   .md\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  }
+
+  .md\:gap-5 {
+    gap: 1.25rem !important;
   }
 
   .md\:rounded-md {
@@ -1087,6 +1061,11 @@ table tr td {
   .md\:text-left {
     text-align: left !important;
   }
+
+  .md\:text-sm {
+    font-size: 0.875rem !important;
+    line-height: 1.25rem !important;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -1098,37 +1077,20 @@ table tr td {
     display: grid !important;
   }
 
+  .lg\:w-\[30\%\] {
+    width: 30% !important;
+  }
+
   .lg\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+  }
+
+  .lg\:gap-24 {
+    gap: 6rem !important;
   }
 
   .lg\:px-28 {
     padding-left: 7rem !important;
     padding-right: 7rem !important;
-  }
-
-  .lg\:px-20 {
-    padding-left: 5rem !important;
-    padding-right: 5rem !important;
-  }
-
-  .lg\:px-24 {
-    padding-left: 6rem !important;
-    padding-right: 6rem !important;
-  }
-
-  .lg\:px-16 {
-    padding-left: 4rem !important;
-    padding-right: 4rem !important;
-  }
-
-  .lg\:px-10 {
-    padding-left: 2.5rem !important;
-    padding-right: 2.5rem !important;
-  }
-
-  .lg\:px-14 {
-    padding-left: 3.5rem !important;
-    padding-right: 3.5rem !important;
   }
 }
