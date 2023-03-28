@@ -874,6 +874,16 @@ video {
   padding-bottom: 2rem !important;
 }
 
+.px-3 {
+  padding-left: 0.75rem !important;
+  padding-right: 0.75rem !important;
+}
+
+.px-4 {
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+}
+
 .text-left {
   text-align: left !important;
 }
@@ -1025,8 +1035,8 @@ table tr td {
     display: none !important;
   }
 
-  .md\:w-\[40\%\] {
-    width: 40% !important;
+  .md\:w-\[50\%\] {
+    width: 50% !important;
   }
 
   .md\:w-\[80\%\] {
@@ -1035,10 +1045,6 @@ table tr td {
 
   .md\:w-full {
     width: 100% !important;
-  }
-
-  .md\:w-\[50\%\] {
-    width: 50% !important;
   }
 
   .md\:grid-cols-3 {
